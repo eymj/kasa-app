@@ -1,0 +1,28 @@
+.banner {
+    height: 111px;
+    display: grid;
+    align-items: center;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-text {
+    margin: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+@media (min-width: 800px) {
+    .banner {
+        text-align: center;
+        height: 223px;
+
+    }
+
+    .banner-text {
+        font-size: 48px;
+
+    }
+  }

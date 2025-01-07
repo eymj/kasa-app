@@ -1,0 +1,10 @@
+.about {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 800px) {
+  .about {
+    gap: 30px;
+  }
+}

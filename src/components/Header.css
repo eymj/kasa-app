@@ -1,0 +1,53 @@
+header {
+  width: 100%;
+}
+
+.header-topbar {
+  padding: 20px;
+  max-width: 1240px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+}
+
+.header-logo {
+  max-width: 145px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+header nav a {
+  color: black;
+  text-decoration: none;
+}
+
+header nav .active-link {
+  text-decoration: underline;
+}
+
+header img {
+  max-width: 100%;
+}
+
+@media (min-width: 800px) {
+  .header-logo {
+    max-width: unset;
+  }
+
+  .header-topbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav {
+    font-size: 24px;
+    text-transform: unset;
+  }
+}

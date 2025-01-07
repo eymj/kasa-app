@@ -1,0 +1,134 @@
+.listing {
+  display: grid;
+  gap: 20px;
+}
+
+.listing-info {
+  display: grid;
+  gap: 20px;
+}
+
+.listing-info-block1 {
+  display: grid;
+  gap: 5px;
+}
+
+.listing-title {
+  font-weight: 500;
+  font-size: 18px;
+  color: #ff6060;
+}
+
+.listing-location {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.listing-tags {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px 10px;
+  flex-wrap: wrap;
+}
+
+.listing-tag {
+  font-size: 10px;
+  font-weight: bold;
+  background-color: #ff6060;
+  color: white;
+  padding: 2px 20px;
+  border-radius: 5px;
+}
+
+.listing-picture {
+  width: 32px;
+  height: 32px;
+}
+
+.listing-picture img {
+  width: 100%;
+  border-radius: 200px;
+}
+
+.listing-name {
+  font-size: 12px;
+  color: #ff6060;
+  font-weight: 500;
+}
+
+.listing-host {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.listing-rating {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  width: 18px;
+  height: 18px;
+}
+
+.listing-info-block2 {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.equipments {
+  list-style: none;
+  padding: 0;
+}
+
+@media (min-width: 800px) {
+  .listing-picture {
+    width: 64px;
+    height: 64px;
+  }
+
+  .listing-name {
+    font-size: 18px;
+  }
+
+  .star {
+    width: 36px;
+    height: 36px;
+  }
+
+  .listing-tag {
+    font-size: 14px;
+  }
+
+  .listing-title {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .listing-location {
+    font-size: 18px;
+  }
+
+  .listing-info {
+    display: flex;
+  }
+
+  .listing-info-block2 {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: end;
+  }
+
+  .listing-info-block1 {
+    flex-grow: 2;
+  }
+
+  .listing-collapsibles {
+    display: flex;
+    gap: 75px;
+  }
+}

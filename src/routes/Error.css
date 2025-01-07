@@ -1,0 +1,48 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 100%;
+}
+
+.main-container {
+  height: 100%;
+}
+
+.error-code {
+  font-size: 96px;
+  font-weight: bold;
+  color: #ff6060;
+}
+
+.error-blurb {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff6060;
+}
+
+.error-link a {
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  text-decoration: underline;
+}
+
+@media (min-width: 800px) {
+  .error {
+    min-height: 900px;
+  }
+
+  .error-code {
+    font-size: 288px;
+  }
+
+  .error-blurb {
+    font-size: 36px;
+  }
+
+  .error-link a {
+    font-size: 18px;
+  }
+}

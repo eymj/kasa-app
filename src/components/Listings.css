@@ -1,0 +1,13 @@
+.card-list {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 800px) {
+  .card-list {
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    padding: 60px;
+  }
+}

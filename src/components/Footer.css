@@ -1,0 +1,43 @@
+footer {
+  height: 209px;
+  display: grid;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+  width: 100%;
+  align-content: center;
+  margin-top: 10px;
+}
+
+.footer-logo {
+  padding: 10px 0;
+}
+
+.footer-content {
+  max-width: 130px;
+  margin: auto;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+@media (min-width: 800px) {
+  footer {
+    margin-top: 40px;
+  }
+
+  .footer-copyright {
+    font-size: 24px;
+  }
+
+  .footer-content {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .footer-logo {
+    padding: 30px;
+  }
+}

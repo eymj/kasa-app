@@ -8,7 +8,6 @@ Card.propTypes = {
 };
 
 function Card({ title, cover, link }) {
-
   return (
     <a href={link}>
       <div

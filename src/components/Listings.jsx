@@ -7,7 +7,6 @@ Listings.propTypes = {
 };
 
 function Listings({ data }) {
-
   return (
     <div className="card-list">
       {data.map((listing, index) => (

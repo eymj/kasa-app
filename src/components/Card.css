@@ -8,7 +8,7 @@
 }
 
 a:has(.card) {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .card-text {

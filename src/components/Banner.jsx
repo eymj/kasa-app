@@ -7,11 +7,14 @@ Banner.propTypes = {
 };
 
 function Banner({ title, image }) {
-  // linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
 
   return (
-    <div className="banner" style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${image})`
-    }}>
+    <div
+      className="banner"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${image})`,
+      }}
+    >
       {title && (
         <div className="banner-text">
           <span>{title}</span>

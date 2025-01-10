@@ -42,6 +42,7 @@
 }
 
 .carousel-counter {
+  display: none;
   grid-area: 1 / 1 / 2 / 2;
   align-self: end;
   justify-self: center;
@@ -56,6 +57,10 @@
   .carousel-arrow {
     width: 80px;
     padding: 20px;
+  }
+
+  .carousel-counter {
+    display: block;
   }
 
   .carousel {

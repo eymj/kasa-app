@@ -84,6 +84,11 @@
   padding: 0;
 }
 
+.listing-collapsibles {
+  display: grid;
+  gap: 20px;
+}
+
 @media (min-width: 800px) {
   .listing-picture {
     width: 64px;

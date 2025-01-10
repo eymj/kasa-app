@@ -8,7 +8,7 @@ import starInactive from "../assets/star-inactive.png";
 import { useParams, useNavigate } from "react-router";
 
 const isValidId = (id) => {
-  return data.some((listing) => listing.id == id);
+  return data.some((l) => l.id == id);
 };
 
 function Listing() {
@@ -21,6 +21,12 @@ function Listing() {
     }
   }, [navigate, params.pid]);
 
+  const listing = data.find((l) => l.id == params.pid)
+
+  if (!listing) {
+    return <div>Loading...</div>; // Fallback if listing is undefined
+  }
+
   const {
     title,
     pictures,
@@ -30,7 +36,7 @@ function Listing() {
     location,
     equipments,
     tags,
-  } = data.find((listing) => listing.id == params.pid);
+  } = listing;
 
   const stars = Array.from({ length: 5 }, (_, index) => index + 1);
 
